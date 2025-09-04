@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P:wght@400&display=swap"
+    />
+    <script src="script.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  </head>
+  <body>
+    <div class="home-page">
+      <div class="hero-section">
+        <div class="bg"></div>
+
+        <div class="title-wrapper">
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: start;
+            "
+          >
+            <div class="top-portfoilo">
+              <div class="dans-portfolio">DAN’S</div>
+              <div class="small-text">
+                <div class="welcome-to-my">
+                  Welcome to my<br />digital world
+                </div>
+                <div class="div">!</div>
+                <div class="title"></div>
+              </div>
+            </div>
+            <div class="dans-portfolio" style="width: 100%">PORTFOLIO</div>
+          </div>
+        </div>
+        <a href="projects.html" class="cta-button" id="cTAButtonContainer">
+          <div class="cta-button-child"></div>
+          <div class="explore-my-works">Explore my works</div>
+        </a>
+        <img
+          class="typing-pixelated"
+          alt="Typing Animation"
+          src="images/Typing Pixelated 2.gif"
+        />
+        <div class="bubble-text">Don't touch me, I'm running DL</div>
+      </div>
+
+      <div class="navigation-bar">
+        <button id="burgerMenu" class="burger-menu">
+          ☰
+        </button>
+        <div id="navLinks" class="nav-links">
+          <a href="about.html" class="about" id="aboutText">/About</a>
+          <a href="projects.html" class="about" id="projectsText">/Projects</a>
+          <a href="contact.html" class="about" id="contactText">/Contact</a>
+        </div>
+      </div>      
+      <div id="square-container"></div>
+      <div class="logo" id="logo">DAN</div>
+    </div>
+  </body>
+</html>

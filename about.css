@@ -1,0 +1,269 @@
+.bg {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #151515;
+  height: 100vh;
+}
+.about-section {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 100vh;
+}
+.about-me {
+  position: absolute;
+  top: 100px;
+  left: 60.1%;
+  letter-spacing: -0.02em;
+  line-height: 150%;
+  color: #ffe100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(1.6rem, 1.65vw, 2.5rem);
+}
+.arrow-left-icon {
+  position: absolute;
+  left: 0;
+  transform: translateY(80%);
+  width: 30%;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.arrow-right-icon {
+  position: absolute;
+  left: 8%;
+  transform: translateY(80%);
+  width: 30%;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.static-pose-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.character-selection {
+  position: absolute;
+  top: 8%;
+  left: 10%;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.my-name-is {
+  position: absolute;
+  top: 10rem;
+  left: 60%;
+  font-size: clamp(1.5rem, 2.5vw, 7rem);
+  letter-spacing: -0.02em;
+  line-height: 150%;
+  display: flex;
+  font-family: "Helvetica Neue";
+  text-align: left;
+  padding-right: 2rem;
+}
+
+.navigation-bar {
+  position: absolute;
+  top: 1.5625rem;
+  right: 5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: 2.4375rem;
+  font-size: 0.9375rem;
+  font-family: "Press Start 2P", cursive;
+  z-index: 100;
+}
+
+.home {
+  width: 8.3125rem;
+  position: relative;
+  letter-spacing: -0.02em;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.875rem;
+  flex-shrink: 0;
+  cursor: pointer;
+  font-family: "Press Start 2P", cursive;
+  font-size: 0.9375rem;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2.4375rem;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.burger-menu {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  z-index: 101;
+  padding-right: 1.3rem;
+}
+
+.about {
+  width: 100%;
+  position: absolute;
+  background-color: #151515;
+  height: 100vh;
+  overflow: hidden;
+  text-align: center;
+  font-size: 32px;
+  font-family: "Press Start 2P";
+  color: #ffffff;
+  text-decoration: none;
+}
+#square-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+.square {
+  background-color: #ffe600;
+  box-sizing: border-box;
+  width: calc(100vw / 20);
+  height: calc(100vw / 20);
+  opacity: 1;
+}
+
+.logo {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  font-family: "Press Start 2P", cursive;
+  font-size: 2rem;
+  color: #ffffff;
+  z-index: 101;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; 
+}
+
+@media screen and (max-width: 1024px) {
+  .character-selection {
+    width: 110%;
+  }
+  .navigation-bar {   
+    right: 2rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navigation-bar {
+    gap: 1rem;
+    right: 1rem;
+    font-size: 0.7rem;
+  }
+  .character-selection {
+    width: 120%;
+    top: 30%;
+    left: 8%;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 3.5rem; 
+    right: 1rem;
+    background-color: #151515;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+}
+
+
+@media screen and (max-width: 565px) {
+  .navigation-bar {
+    gap: 0.4rem;
+    right: 0.5rem;
+    font-size: 0.7rem;
+  }
+  .character-selection {
+    width: 120%;
+  }
+  .about-me {
+    font-size: 1.4rem;
+  }
+  .my-name-is {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 472px) {
+  .navigation-bar {
+    gap: 0.4rem;
+    right: 0.5rem;
+    font-size: 0.7rem;
+  }
+  .character-selection {
+    width: 150%;
+    top: 20%;
+    left: 21.5%;
+  }
+  .about-me {
+    font-size: 1.1rem;
+    left: 35%;
+  }
+  .my-name-is {
+    font-size: 1.25rem;
+    left: 17.5%;
+    top: 50%;
+    text-align: center;
+  }
+}

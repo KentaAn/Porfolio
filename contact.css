@@ -1,0 +1,283 @@
+.bg {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #151515;
+  height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; 
+}
+
+.home {
+  width: 8.3125rem;
+  position: relative;
+  letter-spacing: -0.02em;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.875rem;
+  flex-shrink: 0;
+  cursor: pointer;
+  font-family: "Press Start 2P", cursive;
+  font-size: 0.9375rem;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.navigation-bar {
+  position: absolute;
+  top: 1.5625rem;
+  right: 5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: 2.4375rem;
+  font-size: 0.9375rem;
+  font-family: "Press Start 2P", cursive;
+  z-index: 100;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2.4375rem;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.burger-menu {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  z-index: 101;
+  padding-right: 1.3rem;
+}
+
+.logo {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  font-family: "Press Start 2P", cursive;
+  font-size: 2rem;
+  color: #ffffff;
+  z-index: 101;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#square-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+.square {
+  background-color: #ffe600;
+  box-sizing: border-box;
+  width: calc(100vw / 20);
+  height: calc(100vw / 20);
+  opacity: 1;
+}
+
+.arcade-title {
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  width: 80%; 
+  height: fit-content;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  text-align: center;
+  z-index: 10;
+}
+
+.contact-title {
+  position: absolute;
+  font-size: 1.5vw;
+  color: #000;
+  font-family: "Press Start 2P", cursive;
+  text-transform: uppercase;
+  margin-top: 14%; 
+  z-index: 20;
+}
+
+.social-icons {
+  display: flex;
+  position: relative;
+  justify-content: center; 
+  gap: 0.5vw; 
+  margin-top: -20%;
+}
+
+.icon {
+  width: 7rem; 
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.1); 
+}
+
+
+.arcade-box-2 {
+  width: 42.25vw; 
+  height: auto;
+  object-fit: cover;
+  
+}
+
+@media screen and (max-width: 1440px) {
+  .arcade-box-2 {
+    width: 50vw;
+  }
+
+  .social-icons {
+    margin-top: -24%;
+  }
+
+  .icon {
+    width: 6rem; 
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+
+  .contact-title {
+    margin-top: 16%;
+  }
+
+  .arcade-title {
+    margin-top: 10.5%;
+}
+
+@media screen and (max-width: 1024px) {
+  .arcade-box-2 {
+    width: 80vw;
+  }
+
+  .social-icons {
+    margin-top: -39%;
+  }
+
+  .icon {
+    width: 8rem; 
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+
+  .contact-title {
+    margin-top: 26%;
+    font-size: 3vw;
+  }
+
+  .arcade-title {
+    margin-top: 17%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navigation-bar {
+    gap: 1rem;
+    right: 1rem;
+    font-size: 0.7rem;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 3.5rem; 
+    right: 1rem;
+    background-color: #151515;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .arcade-box-2 {
+    width: 100vw;
+  }
+
+  .social-icons {
+    margin-top: -50%;
+  }
+
+  .icon {
+    width: 7rem; 
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+
+  .contact-title {
+    margin-top: 32%;
+    font-size: 4vw;
+  }
+
+  .arcade-title {
+    margin-top: 32.5%;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .arcade-box-2 {
+    width: 100vw;
+  }
+
+  .social-icons {
+    margin-top: -50%;
+  }
+
+  .icon {
+    width: 4.5rem; 
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+
+  .contact-title {
+    margin-top: 32%;
+    font-size: 4vw;
+  }
+
+  .arcade-title {
+    margin-top: 46.5%;
+  }
+}
+}
