@@ -110,56 +110,56 @@ window.addEventListener("DOMContentLoaded", () => {
         {
           title: "GAME HONG?",
           paragraph:
-            "Games have always been a part of human life, <br/> evolving to suit different situations and <br/> preferences. This project introduces 12 <br/> famous types of games throughout history.",
+            "Games have always been a part of human life, evolving to suit different situations and preferences. This project introduces 12 famous types of games throughout history.",
           link: "https://www.behance.net/gallery/214623599/GAME-HONG",
           previewImage: "images/game-hong-preview.png",
         },
         {
           title: "UNI GLOW",
           paragraph:
-            "UNIGLOW is an infographic showcasing <br/> various Unilever products. With simple instructions, <br/> everyone can have the full experience with ease.",
+            "UNIGLOW is an infographic showcasing various Unilever products. With simple instructions, everyone can have the full experience with ease.",
           link: "https://www.behance.net/gallery/214625737/UNI-GLOW",
           previewImage: "images/uni-glow-preview.png",
         },
         {
           title: "FIESTA VIVA",
           paragraph:
-            "Fiesta Viva is a website for a Mexico-themed festival. <br/> The website shows information about the festival itself, the activities, <br/> and the interactive shopping cart section. Through this project, <br/> we are able to design a functional website by using grids.",
+            "Fiesta Viva is a website for a Mexico-themed festival. The website shows information about the festival itself, the activities, and the interactive shopping cart section. Through this project, we are able to design a functional website by using grids.",
           link: "https://www.behance.net/gallery/214626593/FIESTA-VIVA",
           previewImage: "images/fiesta-viva-preview.png",
         },
         {
           title: "FRACTURED REALITY",
           paragraph:
-            " This project delves into the unsettling experience of a person trapped <br/> within the confines of his home. Familiar spaces, once comforting, now distort <br/> under the influence of sleep paralysis, insomnia, and dementia.",
+            " This project delves into the unsettling experience of a person trapped within the confines of his home. Familiar spaces, once comforting, now distort under the influence of sleep paralysis, insomnia, and dementia.",
           link: "https://www.instagram.com/p/DAOVZSKyAAN/",
           previewImage: "images/fractured-reality-preview.png",
         },
         {
           title: "SHORT VFX VIDEO",
           paragraph:
-            "Experience a captivating short VFX video that masterfully blends innovation <br/> and visual storytelling. This dynamic film brings creativity to life, showcasing <br/> the power of cutting-edge visual effects.",
+            "Experience a captivating short VFX video that masterfully blends innovation and visual storytelling. This dynamic film brings creativity to life, showcasing the power of cutting-edge visual effects.",
           link: "https://www.instagram.com/p/C8kPgjkSwD6/",
           previewImage: "images/short-vfx-preview.png",
         },
         {
           title: "RON THE 1ST EP",
           paragraph:
-            "This project involves creating a series of visualizer videos for an R&B EP <br/> featuring five unique tracks. Each song will be paired with a distinct mood and aesthetic, <br/> ensuring that the visuals complement the emotional tone and musical style of the track <br/> while maintaining a cohesive overall theme for the EP.",
+            "This project involves creating a series of visualizer videos for an R&B EP featuring five unique tracks. Each song will be paired with a distinct mood and aesthetic, ensuring that the visuals complement the emotional tone and musical style of the track while maintaining a cohesive overall theme for the EP.",
           link: "https://www.instagram.com/p/DNlZd80STfV/?img_index=1",
           previewImage: "images/ep-preview.png",
         },
         {
           title: "THE COFFEE STREET VENDOR",
           paragraph:
-            "The Vietnamese anti-hero embodies those who defy norms and authority, <br/> driven by survival or protecting their community rather than heroism. <br/> Rooted in everyday struggles—like street vendors or informal workers— <br/> they reflect resilience and defiance amid economic and cultural pressures.",
+            "The Vietnamese anti-hero embodies those who defy norms and authority, driven by survival or protecting their community rather than heroism. Rooted in everyday struggles—like street vendors or informal workers—they reflect resilience and defiance amid economic and cultural pressures.",
           link: "https://www.behance.net/gallery/233953231/THE-COFFEE-STREET-VENDOR",
           previewImage: "images/the-coffee-street-vendor-preview.png",
         },
         {
           title: "VJ SET",
           paragraph:
-            "A playland-themed VJ set using familiar assets often associated <br/> with childhood—carousels, ball pits, snacks, gummy bears, and candy. <br/> But this isn't just a children's world. We're giving it a playful adult twist <br/> by adding blinking lights and dancing animations, transforming <br/> it into a vibrant space that feels both nostalgic and electrifying.",
+            "A playland-themed VJ set using familiar assets often associated with childhood—carousels, ball pits, snacks, gummy bears, and candy.But this isn't just a children's world. We're giving it a playful adult twist by adding blinking lights and dancing animations, transforming it into a vibrant space that feels both nostalgic and electrifying.",
           link: "https://www.behance.net/gallery/233955881/VJ-SET",
           previewImage: "images/vj-set-preview.png",
         },

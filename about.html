@@ -20,7 +20,9 @@
     <div class="about">
       <div class="about-section">
         <div class="bg"></div>
-        <div class="about-me">About me:</div>
+        <!-- START: New Content Wrapper -->
+      <div class="main-content">
+        <!-- Column 1: Character -->
         <div class="character-selection">
           <img
             id="staticPose"
@@ -28,31 +30,40 @@
             alt="Static Pose"
             src="images/Static Pose.gif"
           />
-          <img
-            id="arrowLeft"
-            class="arrow-left-icon"
-            alt="Left Arrow"
-            src="images/Arrow Left.png"
-          />
-          <img
-            id="arrowRight"
-            class="arrow-right-icon"
-            alt="Right Arrow"
-            src="images/Arrow Right.png"
-          />
+          <div class="arrows">
+            <img
+              id="arrowLeft"
+              class="arrow-left-icon"
+              alt="Left Arrow"
+              src="images/Arrow Left.png"
+            />
+            <img
+              id="arrowRight"
+              class="arrow-right-icon"
+              alt="Right Arrow"
+              src="images/Arrow Right.png"
+            />
+          </div>
         </div>
-        <b class="my-name-is"
-          >My name is An, but you can <br />
-          call me Dan. I’m a designer <br />
-          based in Vietnam with a strong <br />
-          passion for video shooting and <br />
-          editing—particularly color <br />
-          grading and VFX editing. <br />
-          Alongside that, I’m skilled in <br />
-          various areas like UI design, <br />
-          illustration, and sound design <br />
-          (I can even create music!).</b
-        >
+
+        <!-- Column 2: Text -->
+        <div class="text-content">
+          <div class="about-me">About me:</div>
+          <b class="my-name-is"
+            >My name is An, but you can <br />
+            call me Dan. I’m a designer <br />
+            based in Vietnam with a strong <br />
+            passion for video shooting and <br />
+            editing—particularly color <br />
+            grading and VFX editing. <br />
+            Alongside that, I’m skilled in <br />
+            various areas like UI design, <br />
+            illustration, and sound design <br />
+            (I can even create music!).</b
+          >
+        </div>
+      </div>
+      <!-- END: New Content Wrapper -->
         <div class="navigation-bar">
           <button id="burgerMenu" class="burger-menu">
             ☰

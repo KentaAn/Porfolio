@@ -161,28 +161,47 @@ document.addEventListener("DOMContentLoaded", function () {
     }, intervalDuration);
   }
 
-  function restoreLineBreaks(original, shuffled) {
-    const breakIndices = [];
-    let index = 0;
+  // REPLACE the old shuffleTextAnimation function with this new one
+  function shuffleTextAnimation(event) {
+    const target = event.currentTarget;
 
-    original.replace(/<br\s*\/?>/g, (_, offset) => {
-      breakIndices.push(offset - index);
-      index += 4;
-      return "";
-    });
-
-    let result = "";
-    let shuffledIndex = 0;
-
-    for (let i = 0; i < original.length; i++) {
-      if (breakIndices.includes(i)) {
-        result += "<br>";
-      } else {
-        result += shuffled[shuffledIndex++];
-      }
+    if (target.dataset.animating) {
+      return; // Exit if animation is already running
     }
 
-    return result;
+    target.dataset.animating = true;
+
+    const originalText = target.innerHTML; // Keep the original HTML with <br> tags
+    let shuffles = 0;
+    const maxShuffles = 10;
+    const intervalDuration = 500 / maxShuffles;
+
+    let animationInterval = setInterval(() => {
+      if (shuffles >= maxShuffles) {
+        clearInterval(animationInterval);
+        target.innerHTML = originalText; // Restore the original text when done
+        delete target.dataset.animating;
+      } else {
+        // This new logic correctly preserves <br> tags and spaces
+        const shuffledHtml = originalText
+          .split('')
+          .map((char) => {
+            if (char === '<' || char === 'b' || char === 'r' || char === '>') {
+              // A simple way to ignore the <br> tags
+              return char;
+            }
+            if (char === ' ') {
+              return ' '; // Keep spaces
+            }
+            return getRandomCharacter(); // Scramble other characters
+          })
+          .join('');
+
+        // A quick cleanup to fix any scrambled <br> tags
+        target.innerHTML = shuffledHtml.replace(/<br>/g, '<br>');
+        shuffles++;
+      }
+    }, intervalDuration);
   }
 
   

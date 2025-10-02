@@ -9,15 +9,26 @@
 }
 
 .game-hong {
-  position: relative;
-  top: 120px;
   font-size: 3.5vw;
   letter-spacing: -0.02em;
-  line-height: 150%;
+  line-height: 1.5;
   display: flex;
   align-items: center;
   justify-content: center;
-  display: none;
+  display: none; /* JS will make this visible */
+  margin-bottom: 1.5rem; /* Add spacing */
+}
+
+#clickForMore.click-for-more {
+  cursor: pointer;
+  color: #ffe100;
+  font-family: "Helvetica Neue", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+  margin-top: 1.5rem; /* Add spacing */
 }
 
 .click-for-more1 {
@@ -41,10 +52,10 @@
 }
 
 .click-for-more {
-  position: absolute;
-  bottom: 5%;
-  left: 50%;
-  transform: translateX(-50%);
+  /* position: absolute; */ /* REMOVE */
+  /* bottom: 5%; */ /* REMOVE */
+  /* left: 50%; */ /* REMOVE */
+  /* transform: translateX(-50%); */ /* REMOVE */
   cursor: pointer;
   color: #ffe100;
   font-family: "Helvetica Neue", sans-serif;
@@ -55,17 +66,18 @@
   text-decoration: none;
 }
 
+/* The new, corrected rule */
 .games-have-always {
-  position: relative;
-  top: 62%;
   letter-spacing: -0.02em;
   line-height: 150%;
-  display: flex;
-  font-family: "Helvetica Neue";
-  align-items: center;
-  justify-content: center;
-  font-size: 1.2rem;
   display: none;
+  font-family: "Helvetica Neue";
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 1.5rem;
+  /* --- KEY ADDITIONS --- */
+  max-width: 850px;  /* Prevents the paragraph from getting too wide on desktops */
+  padding: 0 1rem;   /* Ensures text doesn't touch the screen edges on mobile */
 }
 
 .navigation-bar {
@@ -132,12 +144,9 @@
 .swiper-container {
   width: 100%;
   max-width: 600px;
-  height: auto;
-  margin: 0 auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  height: 350px; /* Give the swiper a defined height */
+  margin: 0;
+  position: relative;
 }
 
 .swiper-slide {
@@ -165,9 +174,11 @@
   display: none !important;
 }
 
+/* Reduce the active slide scale on mobile to prevent it from being too large */
 .swiper-slide-active {
-  transform: scale(1.5) !important;
+  transform: scale(1.3) !important; /* Reduced from 1.5 */
 }
+
 
 #cursor-image {
   position: absolute;
@@ -248,26 +259,28 @@ body, html {
 }
 
 @media screen and (max-width: 768px) {
+  .content-wrapper {
+    padding-top: 6rem; /* Adjust padding for mobile */
+  }
+
   .game-hong {
     font-size: 6vw;
+    margin-bottom: 1rem;
   }
 
   .swiper-container {
-    top: 50%;
-  }
-
-  .click-for-more {
-    font-size: 1.2rem !important;
-    bottom: 3%;
-  }
-
-  .click-for-more1 {
-    font-size: 1.5rem;
+    max-width: 95vw;
+    height: 300px; /* Adjust height for mobile */
   }
 
   .games-have-always {
-    font-size: 1.2rem;
-    top: 65%;
+    font-size: 1rem;
+    padding: 0 1rem; /* Add horizontal padding to prevent edge touching */
+    margin-top: 1rem;
+  }
+  
+  #clickForMore.click-for-more {
+    margin-top: 1rem;
   }
 
   .navigation-bar {
@@ -299,11 +312,15 @@ body, html {
 
 @media screen and (max-width: 640px) {
   .game-hong {
-    font-size: 6vw;
+    font-size: 7vw;
+  }
+  
+  .swiper-container {
+    height: 250px; /* Further adjust height for small screens */
   }
 
-  .swiper-container {
-    top: 50%;
+  .games-have-always {
+    font-size: 0.9rem;
   }
 
   .click-for-more {
@@ -314,9 +331,16 @@ body, html {
   .click-for-more1 {
     font-size: 1.5rem;
   }
+}
 
-  .games-have-always {
-    font-size: 1rem;
-    top: 65%;
-  }
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically center the content */
+  align-items: center;
+  width: 100%;
+  min-height: 100vh; /* Use min-height to prevent empty space */
+  padding: 5rem 1rem 1rem 1rem; /* Add padding for spacing */
+  z-index: 10; /* IMPORTANT: Bring content above the background */
+  position: relative; /* Needed for z-index to work */
 }

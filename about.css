@@ -15,69 +15,96 @@
   left: 0;
   height: 100vh;
 }
-.about-me {
+
+/* The new, corrected rule */
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 90%;
+  max-width: 1600px; /* INCREASED from 1400px */
+  margin: 0 auto; 
+  gap: 4rem; /* INCREASED gap for more breathing room */
+  z-index: 10;
+  position: relative;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%; /* Takes up 50% of the width */
+}
+
+/* The new, corrected rule */
+/* The new, corrected rule */
+.arrows {
   position: absolute;
-  top: 100px;
-  left: 60.1%;
-  letter-spacing: -0.02em;
-  line-height: 150%;
+  bottom: 35%; /* MOVED UP to align with hands */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10rem; /* INCREASED spacing to match the new size */
+  width: 100%; /* Ensure the container spans the full width for centering */
+  justify-content: center; /* Explicitly center the items */
+}
+
+/* REMOVE absolute positioning from the text elements */
+.about-me {
+  position: relative;
   color: #ffe100;
   display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: clamp(1.6rem, 1.65vw, 2.5rem);
-}
-.arrow-left-icon {
-  position: absolute;
-  left: 0;
-  transform: translateY(80%);
-  width: 30%;
-  max-width: 100%;
-  height: auto;
-  object-fit: cover;
+  font-size: clamp(1.8rem, 3vw, 3rem); /* INCREASED values */
+  margin-bottom: 1.5rem; /* Increased margin */
 }
 
+/* Position arrows relative to the new .arrows container */
+/* The new, corrected rule */
+/* The new, corrected rule */
+.arrow-left-icon,
 .arrow-right-icon {
-  position: absolute;
-  left: 8%;
-  transform: translateY(80%);
-  width: 30%;
-  max-width: 100%;
+  position: relative;
+  width: 200px; /* SIGNIFICANTLY INCREASED for impact */
   height: auto;
-  object-fit: cover;
+  cursor: pointer; 
+  transition: transform 0.2s ease; /* Added for a nice hover effect */
 }
+
+/* Add a subtle hover effect for better feedback */
+.arrow-left-icon:hover,
+.arrow-right-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Position image within its container */
+/* The new, corrected rule */
 .static-pose-1 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 40%;
-  max-width: 100%;
+  position: relative; 
+  width: 100%;
+  max-width: 650px; /* INCREASED from 500px */
   height: auto;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .character-selection {
-  position: absolute;
-  top: 8%;
-  left: 10%;
-  width: 100%;
-  height: auto;
+  position: relative; /* Change from absolute to relative */
+  flex-basis: 50%; /* Takes up 50% of the width */
   display: flex;
   align-items: center;
   justify-content: center;
+  /* REMOVE top, left, width, height properties */
 }
 
+/* The new, corrected rule */
 .my-name-is {
-  position: absolute;
-  top: 10rem;
-  left: 60%;
-  font-size: clamp(1.5rem, 2.5vw, 7rem);
+  position: relative; 
+  font-size: clamp(1.2rem, 2vw, 2rem); /* INCREASED values */
   letter-spacing: -0.02em;
   line-height: 150%;
-  display: flex;
+  display: block; 
   font-family: "Helvetica Neue";
   text-align: left;
-  padding-right: 2rem;
 }
 
 .navigation-bar {
@@ -184,86 +211,72 @@ body, html {
   overflow-x: hidden; 
 }
 
-@media screen and (max-width: 1024px) {
-  .character-selection {
-    width: 110%;
+@media screen and (max-width: 1105px) {
+  .arrows {
+    bottom: 25%; /* Adjust vertical position for mobile */
+    gap: 4rem;     /* Reduce gap on smaller screens */
   }
-  .navigation-bar {   
-    right: 2rem;
-    font-size: 0.8rem;
+  .arrow-left-icon,
+  .arrow-right-icon {
+    width: 180px; /* Slightly smaller arrows for mobile */
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
+  .main-content {
+    flex-direction: column; /* Stack items vertically */
+    padding-top: 6rem; /* Add space from the top */
+    text-align: center;
+  }
+
+  .text-content {
+    align-items: center; /* Center the text container's content */
+  }
+
+  .my-name-is {
+    text-align: center; /* Center the paragraph text */
+  }
+
+  /* Your existing burger menu styles */
   .navigation-bar {
     gap: 1rem;
     right: 1rem;
     font-size: 0.7rem;
   }
-  .character-selection {
-    width: 120%;
-    top: 30%;
-    left: 8%;
-  }
-
   .nav-links {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 3.5rem; 
+    top: 3.5rem;
     right: 1rem;
     background-color: #151515;
     padding: 1rem;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
   }
-
   .nav-links.show {
     display: flex;
   }
-
   .burger-menu {
     display: block;
   }
-}
-
-
-@media screen and (max-width: 565px) {
-  .navigation-bar {
-    gap: 0.4rem;
-    right: 0.5rem;
-    font-size: 0.7rem;
+   .arrows {
+    bottom: 25%; /* Adjust vertical position for mobile */
+    gap: 15rem;     /* Reduce gap on smaller screens */
   }
-  .character-selection {
-    width: 120%;
-  }
-  .about-me {
-    font-size: 1.4rem;
-  }
-  .my-name-is {
-    font-size: 1.4rem;
+  .arrow-left-icon,
+  .arrow-right-icon {
+    width: 180px; /* Slightly smaller arrows for mobile */
   }
 }
 
-@media screen and (max-width: 472px) {
-  .navigation-bar {
-    gap: 0.4rem;
-    right: 0.5rem;
-    font-size: 0.7rem;
+@media screen and (max-width: 640px) {
+  .arrows {
+    bottom: 25%; /* Adjust vertical position for mobile */
+    gap: 13rem;     /* Reduce gap on smaller screens */
   }
-  .character-selection {
-    width: 150%;
-    top: 20%;
-    left: 21.5%;
-  }
-  .about-me {
-    font-size: 1.1rem;
-    left: 35%;
-  }
-  .my-name-is {
-    font-size: 1.25rem;
-    left: 17.5%;
-    top: 50%;
-    text-align: center;
+  .arrow-left-icon,
+  .arrow-right-icon {
+    width: 70px; /* Slightly smaller arrows for mobile */
   }
 }
