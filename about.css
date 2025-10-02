@@ -8,12 +8,8 @@
   height: 100vh;
 }
 .about-section {
-  position: absolute;
   width: 100%;
-  top: 0;
-  right: 0;
-  left: 0;
-  height: 100vh;
+  position: relative;
 }
 
 /* The new, corrected rule */
@@ -159,10 +155,13 @@
 /* The new, corrected rule */
 .about {
   width: 100%;
-  position: relative; /* Changed from absolute */
+  position: relative; /* Use relative for normal document flow */
   background-color: #151515;
-  min-height: 100vh; /* Changed from height to min-height */
-  overflow-x: hidden; /* Changed to allow vertical overflow */
+  min-height: 100vh; /* Use min-height to allow it to grow */
+  overflow-x: hidden; /* Prevent horizontal scroll, allow vertical */
+  display: flex; /* Use flexbox to easily center content */
+  justify-content: center;
+  align-items: center;
   text-align: center;
   font-size: 32px;
   font-family: "Press Start 2P";
@@ -282,3 +281,4 @@ body, html {
   }
 
 }
+
