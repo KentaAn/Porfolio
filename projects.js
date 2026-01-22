@@ -163,6 +163,41 @@ window.addEventListener("DOMContentLoaded", () => {
           link: "https://www.behance.net/gallery/233955881/VJ-SET",
           previewImage: "images/vj-set-preview.png",
         },
+        {
+          title: "HẺM HERTZ",
+          paragraph:
+            "My project is called HẺM HERTZ. It visualizes the hidden frequency of my neighborhood. It argues that the 'Joy' (Sướng) of living there isn't just a feeling—it is the specific ability to tune into the signal and synchronize with the invisible rhythm of the community.",
+          link: "https://www.instagram.com/p/DTzm9x9ivxr/",
+          previewImage: "images/hemhertz-preview.png",
+        },
+        {
+          title: "TSUKUYOMI BRAND",
+          paragraph:
+            "A custom-typography logotype “Tsukuyomi”",
+          link: "https://www.instagram.com/p/DTzq8pqk4sx/?img_index=1",
+          previewImage: "images/tsukuyomi-preview.png",
+        },
+        {
+          title: "MỘT LÍT NƯỚC MẮT (REDESIGN COVER)",
+          paragraph:
+            "Redesign of the “Một lít nước mắt” book cover",
+          link: "https://www.instagram.com/p/DTzyChgk92O/?img_index=1",
+          previewImage: "images/redesign-coverbook-preview.png",
+        },
+        {
+          title: "ORBITEK",
+          paragraph:
+            "A typographic poster featuring my original typeface",
+          link: "https://www.instagram.com/p/DTzt8u_k51w/?img_index=1",
+          previewImage: "images/orbitek-preview.png",
+        },
+        {
+          title: "Ở ĐÂY SƯỚNG THẬT",
+          paragraph:
+            "“Ở đây sướng thật” explores the lived experience of growing up within a tightly knit urban alley community in central Saigon. The project reflects on how spatial proximity, everyday convenience, and enduring neighbourly relationships shape daily life and personal identity. Through themes of mobility, communal bonds, childhood play, and shared celebrations, the work reveals how a familiar neighbourhood becomes a site of comfort, belonging, and collective joy.",
+          link: "https://www.instagram.com/p/DTzv4rwE9nU/?img_index=1",
+          previewImage: "images/ganposter-preview.png",
+        },
       ];
 
       const titleElement = document.querySelector(".game-hong");
@@ -271,3 +306,4 @@ window.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
