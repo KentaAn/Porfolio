@@ -164,7 +164,7 @@ window.addEventListener("DOMContentLoaded", () => {
           previewImage: "images/vj-set-preview.png",
         },
         {
-          title: "HEM HERTZ",
+          title: "HẺM HERTZ",
           paragraph:
             "My project is called HẺM HERTZ. It visualizes the hidden frequency of my neighborhood. It argues that the 'Joy' (Sướng) of living there isn't just a feeling—it is the specific ability to tune into the signal and synchronize with the invisible rhythm of the community.",
           link: "https://www.instagram.com/p/DTzm9x9ivxr/",
@@ -178,7 +178,7 @@ window.addEventListener("DOMContentLoaded", () => {
           previewImage: "images/tsukuyomi-preview.png",
         },
         {
-          title: "MOT LIT NUOC MAT (REDESIGN COVER)",
+          title: "MỘT LÍT NƯỚC MẮT (REDESIGN COVER)",
           paragraph:
             "Redesign of the “Một lít nước mắt” book cover",
           link: "https://www.instagram.com/p/DTzyChgk92O/?img_index=1",
@@ -192,7 +192,7 @@ window.addEventListener("DOMContentLoaded", () => {
           previewImage: "images/orbitek-preview.png",
         },
         {
-          title: "O DAY SUONG THAT",
+          title: "Ở ĐÂY SƯỚNG THẬT",
           paragraph:
             "“Ở đây sướng thật” explores the lived experience of growing up within a tightly knit urban alley community in central Saigon. The project reflects on how spatial proximity, everyday convenience, and enduring neighbourly relationships shape daily life and personal identity. Through themes of mobility, communal bonds, childhood play, and shared celebrations, the work reveals how a familiar neighbourhood becomes a site of comfort, belonging, and collective joy.",
           link: "https://www.instagram.com/p/DTzv4rwE9nU/?img_index=1",
@@ -306,5 +306,6 @@ window.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
 
 
