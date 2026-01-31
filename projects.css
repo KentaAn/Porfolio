@@ -15,7 +15,7 @@
 
 .game-hong {
   font-family: 'SVN-Coder Crux', sans-serif; /* Add this line */
-  font-size: 4.5vw;
+  font-size: 5vw;
   letter-spacing: -0.02em;
   line-height: 1.5;
   display: flex;
@@ -351,4 +351,5 @@ body, html {
   position: relative; /* Needed for z-index to work */
 
 }
+
 
