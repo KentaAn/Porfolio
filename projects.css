@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'SVN-Coder Crux';
+  src: url("fonts/SVN-Coder's Crux.ttf") format("truetype");
+}
+
 .bg {
   position: absolute;
   width: 100%;
@@ -9,6 +14,7 @@
 }
 
 .game-hong {
+  font-family: 'SVN-Coder Crux', sans-serif; /* Add this line */
   font-size: 3.5vw;
   letter-spacing: -0.02em;
   line-height: 1.5;
@@ -343,4 +349,5 @@ body, html {
   padding: 5rem 1rem 1rem 1rem; /* Add padding for spacing */
   z-index: 10; /* IMPORTANT: Bring content above the background */
   position: relative; /* Needed for z-index to work */
+
 }
